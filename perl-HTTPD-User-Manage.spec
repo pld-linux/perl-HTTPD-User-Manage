@@ -4,8 +4,8 @@
 Summary:	HTTPD::User::Manage perl module
 Summary(pl):	Modu³ perla HTTPD::User::Manage
 Name:		perl-HTTPD-User-Manage
-Version:	1.58
-Release:	5
+Version:	1.59
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz

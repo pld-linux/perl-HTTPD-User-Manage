@@ -41,49 +41,49 @@ Obsoletes:	perl-HTTPD-Tools
 HTTPD::User::Manage Perl module.
 
 %description -l cs
-Modul HTTPD::User::Manage pro Perl
+Modul HTTPD::User::Manage pro Perl.
 
 %description -l da
-Perlmodul HTTPD::User::Manage
+Perlmodul HTTPD::User::Manage.
 
 %description -l de
-HTTPD::User::Manage Perl Modul
+HTTPD::User::Manage Perl Modul.
 
 %description -l es
-Módulo de Perl HTTPD::User::Manage
+Módulo de Perl HTTPD::User::Manage.
 
 %description -l fr
-Module Perl HTTPD::User::Manage
+Module Perl HTTPD::User::Manage.
 
 %description -l it
-Modulo di Perl HTTPD::User::Manage
+Modulo di Perl HTTPD::User::Manage.
 
 %description -l ja
 HTTPD::User::Manage Perl ¥â¥¸¥å¡¼¥ë
 
 %description -l ko
-HTTPD::User::Manage ÆŞ ¸ğÁÙ
+HTTPD::User::Manage ÆŞ ¸ğÁÙ.
 
 %description -l no
-Perlmodul HTTPD::User::Manage
+Perlmodul HTTPD::User::Manage.
 
 %description -l pl
 Modu³ Perla HTTPD::User::Manage.
 
 %description -l pt
-Módulo de Perl HTTPD::User::Manage
+Módulo de Perl HTTPD::User::Manage.
 
 %description -l pt_BR
-Módulo Perl HTTPD::User::Manage
+Módulo Perl HTTPD::User::Manage.
 
 %description -l ru
-íÏÄÕÌØ ÄÌÑ Perl HTTPD::User::Manage
+íÏÄÕÌØ ÄÌÑ Perl HTTPD::User::Manage.
 
 %description -l sv
-HTTPD::User::Manage Perlmodul
+HTTPD::User::Manage Perlmodul.
 
 %description -l uk
-íÏÄÕÌØ ÄÌÑ Perl HTTPD::User::Manage
+íÏÄÕÌØ ÄÌÑ Perl HTTPD::User::Manage.
 
 %description -l zh_CN
 HTTPD::User::Manage Perl Ä£¿é

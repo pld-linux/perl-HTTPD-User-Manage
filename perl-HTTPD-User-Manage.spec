@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla HTTPD-User-Manage
 Name:		perl-HTTPD-User-Manage
 Version:	1.53
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTPD/HTTPD-User-Manage-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTPD/HTTPD-User-Manage-%{version}.tar.gz
 BuildRequires:	perl >= 5.005_03-10
 %requires_eq	perl
 Requires:	%{perl_sitearch}
@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 HTTPD-User-Manage perl module
 
 %description -l pl
-Modu³ perla HTTPD-User-Manage 
+Modu³ perla HTTPD-User-Manage
 
 %prep
 %setup -q -n HTTPD-User-Manage-%{version}

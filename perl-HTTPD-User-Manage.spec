@@ -21,7 +21,8 @@ Summary(zh_CN):	HTTPD::User::Manage Perl Ä£¿é
 Name:		perl-HTTPD-User-Manage
 Version:	1.61
 Release:	2
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	72d1024c89c2e86f37e25e9a705782ce

@@ -6,8 +6,14 @@ Version:	1.58
 Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
+Group(cs):	Vıvojové prostøedky/Programovací jazyky/Perl
 Group(de):	Entwicklung/Sprachen/Perl
+Group(es):	Desarrollo/Lenguajes/Perl
+Group(fr):	Development/Langues/Perl
+Group(ja):	³«È¯/¸À¸ì/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
+Group(pt):	Desenvolvimento/Linguagens/Perl
+Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTPD/HTTPD-User-Manage-%{version}.tar.gz
 BuildRequires:	perl-DBI
 BuildRequires:	perl-Digest-MD5

@@ -12,7 +12,7 @@ BuildRequires:	perl >= 5.005_03-10
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Obsoletes:	perl-HTTPD-Tools
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 HTTPD-User-Manage perl module

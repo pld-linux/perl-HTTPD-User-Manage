@@ -26,17 +26,17 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	72d1024c89c2e86f37e25e9a705782ce
 Patch0:		%{name}-module_names.patch
-BuildRequires:	perl-devel >= 5.005_03-10
 BuildRequires:	perl-DBI
 BuildRequires:	perl-Digest-MD5
 BuildRequires:	perl-MIME-Base64
+BuildRequires:	perl-devel >= 5.005_03-10
 BuildRequires:	rpm-perlprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	perl-HTTPD-Tools
 
 # SQL access is used conditionally
-%define		_noautoreq "perl(Mysql)"
+%define		_noautoreq 'perl(Mysql)'
 
 %description
 HTTPD::User::Manage Perl module.
@@ -101,7 +101,8 @@ HTTPD::User::Manage Perl Ä£¿é
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT

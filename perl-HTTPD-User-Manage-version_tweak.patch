@@ -1,0 +1,11 @@
+--- lib/HTTPD/GroupAdmin.pm~	2004-06-11 15:49:47.000000000 +0200
++++ lib/HTTPD/GroupAdmin.pm	2004-08-11 20:01:26.971650440 +0200
+@@ -7,7 +7,7 @@
+ @ISA = qw(HTTPD::AdminBase);
+ $DLM = " ";
+ 
+-$VERSION = 1.50;
++$VERSION = '1.50';
+ 
+ 
+ sub delete {

@@ -2,17 +2,20 @@
 Summary:	HTTPD-User-Manage perl module
 Summary(pl):	Modu³ perla HTTPD-User-Manage
 Name:		perl-HTTPD-User-Manage
-Version:	1.53
-Release:	3
+Version:	1.54
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTPD/HTTPD-User-Manage-%{version}.tar.gz
+BuildRequires:	perl-DBI
+BuildRequires:	perl-Digest-MD5
+BuildRequires:	perl-MIME-Base64
 BuildRequires:	perl >= 5.005_03-10
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-Obsoletes:	perl-HTTPD-Tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Obsoletes:	perl-HTTPD-Tools
 
 %description
 HTTPD-User-Manage perl module
@@ -29,16 +32,10 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/HTTPD-User-Manage
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
-)
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        README
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT

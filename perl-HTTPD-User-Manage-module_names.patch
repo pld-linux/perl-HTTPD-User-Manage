@@ -1,0 +1,40 @@
+--- HTTPD-User-Manage-1.59.orig/lib/HTTPD/UserAdmin.pm	Mon Jul 15 17:50:19 2002
++++ HTTPD-User-Manage-1.59/lib/HTTPD/UserAdmin.pm	Mon Jul 15 17:51:34 2002
+@@ -126,7 +126,7 @@
+ 	#I know, this isn't really "encryption", 
+ 	#since you can't decrypt it, oh well...
+ 	unless (defined $self->{'_MD5'}) {
+-	    require MD5;
++	    require Digest::MD5;
+ 	    $self->{'_MD5'} = new MD5;
+ 	}
+ 	my($username,$realm,$pass) = split(":", $_[0]);
+--- HTTPD-User-Manage-1.59.orig/lib/HTTPD/Authen.pm	Mon Jul 15 17:50:25 2002
++++ HTTPD-User-Manage-1.59/lib/HTTPD/Authen.pm	Mon Jul 15 17:51:30 2002
+@@ -89,7 +89,7 @@
+ sub new {
+     my($class,$ref) = @_;
+     $ref ||= {};
+-    require MD5;
++    require Digest::MD5;
+     $ref->{MD5} = new MD5;
+     bless $ref => $class;
+ }
+--- HTTPD-User-Manage-1.59.orig/lib/HTTPD/UserAdmin/SQL.pm	Mon Jul 15 18:34:21 2002
++++ HTTPD-User-Manage-1.59/lib/HTTPD/UserAdmin/SQL.pm	Mon Jul 15 18:34:21 2002
+@@ -179,13 +179,13 @@
+     my ($self,$field_name,$field_value) = @_;
+     if ($self->{DRIVER} eq 'mSQL') {
+ 	unless ($self->{'_TYPES'}) {
+-	    require Msql;
++	    require Mysql;
+ 	    my $st = $self->{'_DBH'}->prepare("LISTFIELDS $self->{USERTABLE}") 
+ 		|| Carp::croak($DBI::errstr);
+ 	    $st->execute || Carp::croak($DBI::errstr);
+ 	    my $types = $st->{msql_type};
+ 	    foreach (@{$st->{NAME}}) {
+-		$self->{'_TYPES'}->{$_} = Msql::CHAR_TYPE() eq (shift @{$types});
++		$self->{'_TYPES'}->{$_} = Mysql::CHAR_TYPE() eq (shift @{$types});
+ 	    }
+ 	    $st->finish();
+ 	}

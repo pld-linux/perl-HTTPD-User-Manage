@@ -10,7 +10,7 @@ Summary(fr):	Module Perl HTTPD::User::Manage
 Summary(it):	Modulo di Perl HTTPD::User::Manage
 Summary(ja):	HTTPD::User::Manage Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	HTTPD::User::Manage ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul HTTPD::User::Manage
+Summary(nb):	Perlmodul HTTPD::User::Manage
 Summary(pl):	Modu³ Perla HTTPD::User::Manage
 Summary(pt):	Módulo de Perl HTTPD::User::Manage
 Summary(pt_BR):	Módulo Perl HTTPD::User::Manage
@@ -65,7 +65,7 @@ HTTPD::User::Manage Perl ¥â¥¸¥å¡¼¥ë
 %description -l ko
 HTTPD::User::Manage ÆÞ ¸ðÁÙ.
 
-%description -l no
+%description -l nb
 Perlmodul HTTPD::User::Manage.
 
 %description -l pl

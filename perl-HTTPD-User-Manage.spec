@@ -4,13 +4,13 @@
 Summary:	Managing access control with the Apache, NCSA httpd, CERN and Netscape servers
 Summary(pl):	Kontrola dostêpu w serwerach Apache, NCSA httpd, CERN i Netscape
 Name:		perl-HTTPD-User-Manage
-Version:	1.61
-Release:	2
+Version:	1.62
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	72d1024c89c2e86f37e25e9a705782ce
+# Source0-md5:	92442d6d04cf09b3b26b79b0f6bfafa5
 Patch0:		%{name}-module_names.patch
 BuildRequires:	perl-DBI
 BuildRequires:	perl-Digest-MD5

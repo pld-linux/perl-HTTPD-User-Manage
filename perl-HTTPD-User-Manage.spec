@@ -12,12 +12,12 @@ Summary(ja):	HTTPD::User::Manage Perl ╔Б╔╦╔Е║╪╔К
 Summary(ko):	HTTPD::User::Manage фч ╦Паы
 Summary(no):	Perlmodul HTTPD::User::Manage
 Summary(pl):	ModuЁ Perla HTTPD::User::Manage
-Summary(pt):	MСdulo de Perl HTPD::User::Manage
-Summary(pt_BR):	MСdulo Perl HTPD::User::Manage
-Summary(ru):	Модуль для Perl HTPD::User::Manage
-Summary(sv):	HTPD::User::Manage Perlmodul
-Summary(uk):	Модуль для Perl HTPD::User::Manage
-Summary(zh_CN):	HTPD::User::Manage Perl дё©И
+Summary(pt):	MСdulo de Perl HTTPD::User::Manage
+Summary(pt_BR):	MСdulo Perl HTTPD::User::Manage
+Summary(ru):	Модуль для Perl HTTPD::User::Manage
+Summary(sv):	HTTPD::User::Manage Perlmodul
+Summary(uk):	Модуль для Perl HTTPD::User::Manage
+Summary(zh_CN):	HTTPD::User::Manage Perl дё©И
 Name:		perl-HTTPD-User-Manage
 Version:	1.59
 Release:	3
@@ -71,22 +71,22 @@ Perlmodul HTTPD::User::Manage
 ModuЁ Perla HTTPD::User::Manage.
 
 %description -l pt
-MСdulo de Perl HTPD::User::Manage
+MСdulo de Perl HTTPD::User::Manage
 
 %description -l pt_BR
-MСdulo Perl HTPD::User::Manage
+MСdulo Perl HTTPD::User::Manage
 
 %description -l ru
-Модуль для Perl HTPD::User::Manage
+Модуль для Perl HTTPD::User::Manage
 
 %description -l sv
-HTPD::User::Manage Perlmodul
+HTTPD::User::Manage Perlmodul
 
 %description -l uk
-Модуль для Perl HTPD::User::Manage
+Модуль для Perl HTTPD::User::Manage
 
 %description -l zh_CN
-HTPD::User::Manage Perl дё©И
+HTTPD::User::Manage Perl дё©И
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

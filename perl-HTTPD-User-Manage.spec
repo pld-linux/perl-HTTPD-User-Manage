@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	perl-HTTPD-Tools
 
 # SQL access is used conditionally
-%define		_noautoreq 'perl(Mysql)'
+%define		_noautoreq 'perl(Mysql)' 'perl(NDBM_File)'
 
 %description
 HTTPD-User-Manage package contains a script and set of Perl modules

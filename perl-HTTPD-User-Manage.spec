@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	HTTPD
 %define	pnam	User-Manage
-%include	/usr/lib/rpm/macros.perl
 Summary:	HTTPD-User-Manage perl module
 Summary(pl):	Modu³ perla HTTPD-User-Manage
 Name:		perl-HTTPD-User-Manage
 Version:	1.58
-Release:	4
-
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -25,7 +24,7 @@ HTTPD-User-Manage perl module.
 Modu³ perla HTTPD-User-Manage.
 
 %prep
-%setup -q -n HTTPD-User-Manage-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL

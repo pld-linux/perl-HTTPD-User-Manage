@@ -1,23 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTTPD
 %define	pnam	User-Manage
-Summary:	HTTPD::User::Manage Perl module
-Summary(cs):	Modul HTTPD::User::Manage pro Perl
-Summary(da):	Perlmodul HTTPD::User::Manage
-Summary(de):	HTTPD::User::Manage Perl Modul
-Summary(es):	Módulo de Perl HTTPD::User::Manage
-Summary(fr):	Module Perl HTTPD::User::Manage
-Summary(it):	Modulo di Perl HTTPD::User::Manage
-Summary(ja):	HTTPD::User::Manage Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	HTTPD::User::Manage ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul HTTPD::User::Manage
-Summary(pl):	Modu³ Perla HTTPD::User::Manage
-Summary(pt):	Módulo de Perl HTTPD::User::Manage
-Summary(pt_BR):	Módulo Perl HTTPD::User::Manage
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl HTTPD::User::Manage
-Summary(sv):	HTTPD::User::Manage Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl HTTPD::User::Manage
-Summary(zh_CN):	HTTPD::User::Manage Perl Ä£¿é
+Summary:	Managing access control with the Apache, NCSA httpd, CERN and Netscape servers
+Summary(pl):	Kontrola dostêpu w serwerach Apache, NCSA httpd, CERN i Netscape
 Name:		perl-HTTPD-User-Manage
 Version:	1.61
 Release:	2
@@ -40,55 +25,14 @@ Obsoletes:	perl-HTTPD-Tools
 %define		_noautoreq 'perl(Mysql)'
 
 %description
-HTTPD::User::Manage Perl module.
-
-%description -l cs
-Modul HTTPD::User::Manage pro Perl.
-
-%description -l da
-Perlmodul HTTPD::User::Manage.
-
-%description -l de
-HTTPD::User::Manage Perl Modul.
-
-%description -l es
-Módulo de Perl HTTPD::User::Manage.
-
-%description -l fr
-Module Perl HTTPD::User::Manage.
-
-%description -l it
-Modulo di Perl HTTPD::User::Manage.
-
-%description -l ja
-HTTPD::User::Manage Perl ¥â¥¸¥å¡¼¥ë
-
-%description -l ko
-HTTPD::User::Manage ÆÞ ¸ðÁÙ.
-
-%description -l nb
-Perlmodul HTTPD::User::Manage.
+HTTPD-User-Manage package contains a script and set of Perl modules
+for managing access control with the Apache, NCSA httpd, CERN and
+Netscape servers (and maybe some others).
 
 %description -l pl
-Modu³ Perla HTTPD::User::Manage.
-
-%description -l pt
-Módulo de Perl HTTPD::User::Manage.
-
-%description -l pt_BR
-Módulo Perl HTTPD::User::Manage.
-
-%description -l ru
-íÏÄÕÌØ ÄÌÑ Perl HTTPD::User::Manage.
-
-%description -l sv
-HTTPD::User::Manage Perlmodul.
-
-%description -l uk
-íÏÄÕÌØ ÄÌÑ Perl HTTPD::User::Manage.
-
-%description -l zh_CN
-HTTPD::User::Manage Perl Ä£¿é
+Pakiet HTTPD-User-Manage zawiera skrypt i zestaw modu³ów Perla do
+zarz±dzania kontrol± dostêpu w serwerach Apache, NCSA httpd, CERN i
+Netscape (a byæ mo¿e tak¿e kilku innych).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

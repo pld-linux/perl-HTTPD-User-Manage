@@ -20,10 +20,11 @@ Summary(uk):	Модуль для Perl HTPD::User::Manage
 Summary(zh_CN):	HTPD::User::Manage Perl дё©И
 Name:		perl-HTTPD-User-Manage
 Version:	1.59
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Patch0:		%{name}-module_names.patch
 BuildRequires:	perl >= 5.005_03-10
 BuildRequires:	perl-DBI
 BuildRequires:	perl-Digest-MD5
@@ -32,6 +33,9 @@ BuildRequires:	rpm-perlprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	perl-HTTPD-Tools
+
+# SQL access is used conditionally
+%define		_noautoreq "perl(Mysql)"
 
 %description
 HTTPD::User::Manage Perl module.
@@ -86,6 +90,7 @@ HTPD::User::Manage Perl дё©И
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 perl Makefile.PL

@@ -20,7 +20,7 @@ Summary(uk):	Модуль для Perl HTTPD::User::Manage
 Summary(zh_CN):	HTTPD::User::Manage Perl дё©И
 Name:		perl-HTTPD-User-Manage
 Version:	1.61
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -93,7 +93,8 @@ HTTPD::User::Manage Perl дё©И
 %patch0 -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -107,18 +108,18 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%dir %{perl_sitelib}/HTTPD
-%{perl_sitelib}/HTTPD/*.pm
-%dir %{perl_sitelib}/HTTPD/GroupAdmin
-%{perl_sitelib}/HTTPD/GroupAdmin/*.pm
-%dir %{perl_sitelib}/HTTPD/GroupAdmin/DBM
-%{perl_sitelib}/HTTPD/GroupAdmin/DBM/apache.pm
-%dir %{perl_sitelib}/HTTPD/GroupAdmin/Text
-%{perl_sitelib}/HTTPD/GroupAdmin/Text/cern.pm
-%dir %{perl_sitelib}/HTTPD/UserAdmin
-%{perl_sitelib}/HTTPD/UserAdmin/*.pm
-%dir %{perl_sitelib}/HTTPD/UserAdmin/DBM
-%{perl_sitelib}/HTTPD/UserAdmin/DBM/netscape.pm
-%dir %{perl_sitelib}/HTTPD/UserAdmin/Text
-%{perl_sitelib}/HTTPD/UserAdmin/Text/cern.pm
+%dir %{perl_vendorlib}/HTTPD
+%{perl_vendorlib}/HTTPD/*.pm
+%dir %{perl_vendorlib}/HTTPD/GroupAdmin
+%{perl_vendorlib}/HTTPD/GroupAdmin/*.pm
+%dir %{perl_vendorlib}/HTTPD/GroupAdmin/DBM
+%{perl_vendorlib}/HTTPD/GroupAdmin/DBM/apache.pm
+%dir %{perl_vendorlib}/HTTPD/GroupAdmin/Text
+%{perl_vendorlib}/HTTPD/GroupAdmin/Text/cern.pm
+%dir %{perl_vendorlib}/HTTPD/UserAdmin
+%{perl_vendorlib}/HTTPD/UserAdmin/*.pm
+%dir %{perl_vendorlib}/HTTPD/UserAdmin/DBM
+%{perl_vendorlib}/HTTPD/UserAdmin/DBM/netscape.pm
+%dir %{perl_vendorlib}/HTTPD/UserAdmin/Text
+%{perl_vendorlib}/HTTPD/UserAdmin/Text/cern.pm
 %{_mandir}/man3/*

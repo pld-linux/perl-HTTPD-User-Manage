@@ -19,7 +19,7 @@ Summary(sv):	HTTPD::User::Manage Perlmodul
 Summary(uk):	Модуль для Perl HTTPD::User::Manage
 Summary(zh_CN):	HTTPD::User::Manage Perl дё©И
 Name:		perl-HTTPD-User-Manage
-Version:	1.6
+Version:	1.61
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl

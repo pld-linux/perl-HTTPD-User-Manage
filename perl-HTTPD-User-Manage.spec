@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	HTTPD
-%define	pnam	User-Manage
+%define		pdir	HTTPD
+%define		pnam	User-Manage
 Summary:	Managing access control with the Apache, NCSA httpd, CERN and Netscape servers
 Summary(pl):	Kontrola dostêpu w serwerach Apache, NCSA httpd, CERN i Netscape
 Name:		perl-HTTPD-User-Manage

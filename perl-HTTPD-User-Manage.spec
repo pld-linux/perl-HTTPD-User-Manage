@@ -3,7 +3,7 @@ Summary:	HTTPD-User-Manage perl module
 Summary(pl):	Modu³ perla HTTPD-User-Manage
 Name:		perl-HTTPD-User-Manage
 Version:	1.58
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -13,6 +13,7 @@ BuildRequires:	perl-DBI
 BuildRequires:	perl-Digest-MD5
 BuildRequires:	perl-MIME-Base64
 BuildRequires:	perl >= 5.005_03-10
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	perl-HTTPD-Tools
 

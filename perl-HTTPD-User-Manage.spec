@@ -2,7 +2,7 @@
 %define		pdir	HTTPD
 %define		pnam	User-Manage
 Summary:	Managing access control with the Apache, NCSA httpd, CERN and Netscape servers
-Summary(pl):	Kontrola dostêpu w serwerach Apache, NCSA httpd, CERN i Netscape
+Summary(pl.UTF-8):   Kontrola dostÄ™pu w serwerach Apache, NCSA httpd, CERN i Netscape
 Name:		perl-HTTPD-User-Manage
 Version:	1.62
 Release:	2
@@ -30,10 +30,10 @@ HTTPD-User-Manage package contains a script and set of Perl modules
 for managing access control with the Apache, NCSA httpd, CERN and
 Netscape servers (and maybe some others).
 
-%description -l pl
-Pakiet HTTPD-User-Manage zawiera skrypt i zestaw modu³ów Perla do
-zarz±dzania kontrol± dostêpu w serwerach Apache, NCSA httpd, CERN i
-Netscape (a byæ mo¿e tak¿e kilku innych).
+%description -l pl.UTF-8
+Pakiet HTTPD-User-Manage zawiera skrypt i zestaw moduÅ‚Ã³w Perla do
+zarzÄ…dzania kontrolÄ… dostÄ™pu w serwerach Apache, NCSA httpd, CERN i
+Netscape (a byÄ‡ moÅ¼e takÅ¼e kilku innych).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

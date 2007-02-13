@@ -2,7 +2,7 @@
 %define		pdir	HTTPD
 %define		pnam	User-Manage
 Summary:	Managing access control with the Apache, NCSA httpd, CERN and Netscape servers
-Summary(pl.UTF-8):   Kontrola dostępu w serwerach Apache, NCSA httpd, CERN i Netscape
+Summary(pl.UTF-8):	Kontrola dostępu w serwerach Apache, NCSA httpd, CERN i Netscape
 Name:		perl-HTTPD-User-Manage
 Version:	1.62
 Release:	2

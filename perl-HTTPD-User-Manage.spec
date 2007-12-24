@@ -9,18 +9,19 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/HTTPD/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	cf6c793d76207e71e652f439683219b0
 Patch0:		%{name}-module_names.patch
 Patch1:		%{name}-version_tweak.patch
+URL:		http://search.cpan.org/dist/HTTPD-User-Manage/
 BuildRequires:	perl-DBI
 BuildRequires:	perl-Digest-MD5
 BuildRequires:	perl-MIME-Base64
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov
+Obsoletes:	perl-HTTPD-Tools
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Obsoletes:	perl-HTTPD-Tools
 
 # SQL access is used conditionally
 %define		_noautoreq 'perl(Mysql)' 'perl(NDBM_File)'
